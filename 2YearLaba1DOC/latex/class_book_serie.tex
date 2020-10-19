@@ -1,0 +1,101 @@
+\hypertarget{class_book_serie}{}\doxysection{Book\+Serie Class Reference}
+\label{class_book_serie}\index{BookSerie@{BookSerie}}
+
+
+A class which describes series of books.  
+
+
+
+
+{\ttfamily \#include $<$Book\+Serie.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_book_serie_a50ff18b5f9cef70b8b1df828c0a4d774}{Book\+Serie}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the class \mbox{\hyperlink{class_book_serie}{Book\+Serie}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_book}{Book}} $>$ \& \mbox{\hyperlink{class_book_serie_a9fe1a3fced9db423885c717c59eb0ee6}{get\+Serie}} (int index)
+\begin{DoxyCompactList}\small\item\em A function for getting a serie by its index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_serie_ab681c8d2bcd4eff7968435258b11c8be}{print}} ()
+\begin{DoxyCompactList}\small\item\em Print all the series of books. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{class_book}{Book}} $>$ $>$ \mbox{\hyperlink{class_book_serie_a5e991c108d549f641068a16dffa035dc}{series}}
+\begin{DoxyCompactList}\small\item\em All the series of books from the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which describes series of books. 
+
+This class has private field\+: series vector$<$\+Book$>$\& \mbox{\hyperlink{class_book_serie_a50ff18b5f9cef70b8b1df828c0a4d774}{Book\+Serie()}}; And public methods\+: constructor \mbox{\hyperlink{class_book_serie_a50ff18b5f9cef70b8b1df828c0a4d774}{Book\+Serie()}}, \mbox{\hyperlink{class_book_serie_a9fe1a3fced9db423885c717c59eb0ee6}{get\+Serie(int index)}}, \mbox{\hyperlink{class_book_serie_ab681c8d2bcd4eff7968435258b11c8be}{print()}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_book_serie_a50ff18b5f9cef70b8b1df828c0a4d774}\label{class_book_serie_a50ff18b5f9cef70b8b1df828c0a4d774}} 
+\index{BookSerie@{BookSerie}!BookSerie@{BookSerie}}
+\index{BookSerie@{BookSerie}!BookSerie@{BookSerie}}
+\doxysubsubsection{\texorpdfstring{BookSerie()}{BookSerie()}}
+{\footnotesize\ttfamily Book\+Serie\+::\+Book\+Serie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor of the class \mbox{\hyperlink{class_book_serie}{Book\+Serie}}. 
+
+This function takes the information about books from the file and makes an object of the class \mbox{\hyperlink{class_book_serie}{Book\+Serie}} from the serial books $<$ An array of all books from the file
+
+$<$ Constructor for \mbox{\hyperlink{class_book}{Book}}
+
+$<$ A matrix in which every line is for one serie of books
+
+$<$ Counter
+
+$<$ Logical variable to avoid printing the same book twice
+
+An array for every serie
+
+Adding books to arrays of series
+
+Here we sort books, using their year of publishing. The year increases
+
+$<$ the result
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_book_serie_a9fe1a3fced9db423885c717c59eb0ee6}\label{class_book_serie_a9fe1a3fced9db423885c717c59eb0ee6}} 
+\index{BookSerie@{BookSerie}!getSerie@{getSerie}}
+\index{getSerie@{getSerie}!BookSerie@{BookSerie}}
+\doxysubsubsection{\texorpdfstring{getSerie()}{getSerie()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_book}{Book}} $>$ \& Book\+Serie\+::get\+Serie (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+A function for getting a serie by its index. 
+
+This function takes the index from console and returns the bookserie with this index \mbox{\Hypertarget{class_book_serie_ab681c8d2bcd4eff7968435258b11c8be}\label{class_book_serie_ab681c8d2bcd4eff7968435258b11c8be}} 
+\index{BookSerie@{BookSerie}!print@{print}}
+\index{print@{print}!BookSerie@{BookSerie}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Book\+Serie\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print all the series of books. 
+
+This function puts out into console all bookseries. Putting out series of books into console
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_book_serie_a5e991c108d549f641068a16dffa035dc}\label{class_book_serie_a5e991c108d549f641068a16dffa035dc}} 
+\index{BookSerie@{BookSerie}!series@{series}}
+\index{series@{series}!BookSerie@{BookSerie}}
+\doxysubsubsection{\texorpdfstring{series}{series}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{class_book}{Book}}$>$ $>$ Book\+Serie\+::series\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+All the series of books from the file. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/source/repos/2\+Year\+Laba1/2\+Year\+Laba1/\mbox{\hyperlink{_book_serie_8h}{Book\+Serie.\+h}}\item 
+C\+:/\+Users/\+User/source/repos/2\+Year\+Laba1/2\+Year\+Laba1/\mbox{\hyperlink{_book_serie_8cpp}{Book\+Serie.\+cpp}}\end{DoxyCompactItemize}

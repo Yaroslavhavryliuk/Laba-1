@@ -1,0 +1,316 @@
+\hypertarget{class_matrix}{}\doxysection{Matrix$<$ T $>$ Class Template Reference}
+\label{class_matrix}\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+
+
+A template class which can save a matrix of elements of different types and work with these elements.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_matrix_a9885e36ebb42ea41cb2b53dafb128366}{Matrix}} (vector$<$ vector$<$ T $>$$>$ \&\mbox{\hyperlink{class_matrix_aa1ed6e110580811be90b85f00d2f3cd9}{value}}, int \mbox{\hyperlink{class_matrix_a9508c52bd0fc8c39a241e15dec4362b1}{rd}}, int \mbox{\hyperlink{class_matrix_a326eb93d497ed6666f9eec58e7013ba2}{st}})
+\begin{DoxyCompactList}\small\item\em A constructor of the class \mbox{\hyperlink{class_matrix}{Matrix}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_matrix_afbe1c10462e5caf6d96b773e0038ce71}{get\+Rd}} ()
+\begin{DoxyCompactList}\small\item\em Getter for rd field. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_matrix_afa11dcfb476fa7f2a146803507c35bce}{get\+St}} ()
+\begin{DoxyCompactList}\small\item\em Getter for st field. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ T $>$ $>$ \& \mbox{\hyperlink{class_matrix_a4bd7c99cd0c666e42f11a0463a98187d}{get\+Values}} ()
+\begin{DoxyCompactList}\small\item\em Getter for values field. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{class_matrix_a2ee4e103b81e0ab64d0e03eaf21744bd}{operator()}} (int \mbox{\hyperlink{class_matrix_a9508c52bd0fc8c39a241e15dec4362b1}{rd}}, int \mbox{\hyperlink{class_matrix_a326eb93d497ed6666f9eec58e7013ba2}{st}})
+\begin{DoxyCompactList}\small\item\em An operator which takes the indexes and returns the value of element with this index. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_matrix_af2782a1ee05befb1d6185129b43f4227}{get\+Value}} (T \mbox{\hyperlink{class_matrix_aa1ed6e110580811be90b85f00d2f3cd9}{value}})
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_matrix_a6d2347eb29f6bad1ff3cbd2ed953c939}{get\+Book\+Value}} (string name)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_matrix_a49305b10ef5cc74ccef4c2d53930ae1a}{get\+Character\+Value}} (string name)
+\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{class_matrix_ac388927a489ea5464d98df905cfb7648}{add\+Matrix}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&matr)
+\begin{DoxyCompactList}\small\item\em Adding operation for two matrixes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{class_matrix_a08c54f1d3b68c3f8389a1ee757f24f19}{multiply\+Matrix}} (\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&matr)
+\begin{DoxyCompactList}\small\item\em Multiplying operation for two matrixes. \end{DoxyCompactList}\item 
+vector$<$ T $>$ \mbox{\hyperlink{class_matrix_a92352d28aec4c8135a4b4bcac0b75fda}{multiply\+Matrix\+By\+Vector}} (vector$<$ T $>$ \&arr)
+\begin{DoxyCompactList}\small\item\em Multiplying operation for matrix and vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \mbox{\hyperlink{class_matrix_a292b27233d71f821e07752da991d78e4}{transpone\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Transponing operation for matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matrix_ad13471b4c864eec5335ad1eb70cb85f4}{print}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_a7020e3ce2d8fc707b82272667e367f9f}{print\+Book}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_a7009c4e0e2eb5c3aa76ff0e884df44b8}{print\+Character}} ()
+\item 
+void \mbox{\hyperlink{class_matrix_ae57667af6bec1901a92d1b5410958e99}{print\+Rarefy}} ()
+\item 
+\mbox{\hyperlink{class_matrix_a91aa704de674203e96aece9e1955ccd3}{$\sim$\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the class \mbox{\hyperlink{class_matrix}{Matrix}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_matrix_a9508c52bd0fc8c39a241e15dec4362b1}{rd}}
+\item 
+int \mbox{\hyperlink{class_matrix_a326eb93d497ed6666f9eec58e7013ba2}{st}}
+\begin{DoxyCompactList}\small\item\em indexes of matrix \end{DoxyCompactList}\item 
+vector$<$ vector$<$ T $>$ $>$ \mbox{\hyperlink{class_matrix_aa1ed6e110580811be90b85f00d2f3cd9}{value}}
+\begin{DoxyCompactList}\small\item\em values of elements \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Matrix$<$ T $>$}
+
+A template class which can save a matrix of elements of different types and work with these elements. 
+
+This class has private fields\+: rd, st, value And public methods\+: Constructor \mbox{\hyperlink{class_matrix_a9885e36ebb42ea41cb2b53dafb128366}{Matrix(vector$<$vector$<$\+T$>$$>$\& value, int rd, int st)}} , \mbox{\hyperlink{class_matrix_afbe1c10462e5caf6d96b773e0038ce71}{get\+Rd()}}, \mbox{\hyperlink{class_matrix_afa11dcfb476fa7f2a146803507c35bce}{get\+St()}}, \mbox{\hyperlink{class_matrix_a4bd7c99cd0c666e42f11a0463a98187d}{get\+Values()}}, \mbox{\hyperlink{class_matrix_a2ee4e103b81e0ab64d0e03eaf21744bd}{operator ()(int rd, int st)}}, \mbox{\hyperlink{class_matrix_af2782a1ee05befb1d6185129b43f4227}{get\+Value(\+T value)}}, \mbox{\hyperlink{class_matrix_a6d2347eb29f6bad1ff3cbd2ed953c939}{get\+Book\+Value(string name)}}, \mbox{\hyperlink{class_matrix_a49305b10ef5cc74ccef4c2d53930ae1a}{get\+Character\+Value(string name)}}, \mbox{\hyperlink{class_matrix_ac388927a489ea5464d98df905cfb7648}{add\+Matrix(\+Matrix$<$\+T$>$\& matr)}}, \mbox{\hyperlink{class_matrix_a08c54f1d3b68c3f8389a1ee757f24f19}{multiply\+Matrix(\+Matrix$<$\+T$>$\& matr)}}, \mbox{\hyperlink{class_matrix_a92352d28aec4c8135a4b4bcac0b75fda}{multiply\+Matrix\+By\+Vector(vector$<$\+T$>$\& arr)}}, \mbox{\hyperlink{class_matrix_a292b27233d71f821e07752da991d78e4}{transpone\+Matrix()}}, \mbox{\hyperlink{class_matrix_ad13471b4c864eec5335ad1eb70cb85f4}{print()}}, \mbox{\hyperlink{class_matrix_a7020e3ce2d8fc707b82272667e367f9f}{print\+Book()}}, \mbox{\hyperlink{class_matrix_a7009c4e0e2eb5c3aa76ff0e884df44b8}{print\+Character()}}, \mbox{\hyperlink{class_matrix_ae57667af6bec1901a92d1b5410958e99}{print\+Rarefy()}}, destructor \mbox{\hyperlink{class_matrix_a91aa704de674203e96aece9e1955ccd3}{$\sim$\+Matrix()}} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matrix_a9885e36ebb42ea41cb2b53dafb128366}\label{class_matrix_a9885e36ebb42ea41cb2b53dafb128366}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matrix()}{Matrix()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ T $>$$>$ \&}]{value,  }\item[{int}]{rd,  }\item[{int}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A constructor of the class \mbox{\hyperlink{class_matrix}{Matrix}}. 
+
+This function taces an adress of double array of template values and numbers of lines and columns of this double array and creates an object of the class \mbox{\hyperlink{class_matrix}{Matrix}} \mbox{\Hypertarget{class_matrix_a91aa704de674203e96aece9e1955ccd3}\label{class_matrix_a91aa704de674203e96aece9e1955ccd3}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!````~Matrix@{$\sim$Matrix}}
+\index{````~Matrix@{$\sim$Matrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Matrix()}{~Matrix()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_matrix}{Matrix}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructor of the class \mbox{\hyperlink{class_matrix}{Matrix}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matrix_ac388927a489ea5464d98df905cfb7648}\label{class_matrix_ac388927a489ea5464d98df905cfb7648}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!addMatrix@{addMatrix}}
+\index{addMatrix@{addMatrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addMatrix()}{addMatrix()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$T$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::add\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{matr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Adding operation for two matrixes. 
+
+This function takes the object of another matrix, add this and another matrixes and returns matrix-\/result $<$ For result
+
+$<$ Matrix-\/result\mbox{\Hypertarget{class_matrix_a6d2347eb29f6bad1ff3cbd2ed953c939}\label{class_matrix_a6d2347eb29f6bad1ff3cbd2ed953c939}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!getBookValue@{getBookValue}}
+\index{getBookValue@{getBookValue}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getBookValue()}{getBookValue()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$int$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::get\+Book\+Value (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function takes the name of the book and returns indexes of this book in matrix \begin{DoxyWarning}{Warning}
+The name must be present in the matrix 
+\end{DoxyWarning}
+$<$ two indexes of matrix
+
+$<$ The first index
+
+$<$ The second index\mbox{\Hypertarget{class_matrix_a49305b10ef5cc74ccef4c2d53930ae1a}\label{class_matrix_a49305b10ef5cc74ccef4c2d53930ae1a}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!getCharacterValue@{getCharacterValue}}
+\index{getCharacterValue@{getCharacterValue}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getCharacterValue()}{getCharacterValue()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$int$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::get\+Character\+Value (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function takes the name of the character and returns indexes of this character in matrix \begin{DoxyWarning}{Warning}
+The name must be present in the matrix 
+\end{DoxyWarning}
+$<$ two indexes of matrix
+
+$<$ The first index
+
+$<$ The second index\mbox{\Hypertarget{class_matrix_afbe1c10462e5caf6d96b773e0038ce71}\label{class_matrix_afbe1c10462e5caf6d96b773e0038ce71}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!getRd@{getRd}}
+\index{getRd@{getRd}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getRd()}{getRd()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::get\+Rd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for rd field. 
+
+This function returns the number of lines of the matrix \mbox{\Hypertarget{class_matrix_afa11dcfb476fa7f2a146803507c35bce}\label{class_matrix_afa11dcfb476fa7f2a146803507c35bce}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!getSt@{getSt}}
+\index{getSt@{getSt}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSt()}{getSt()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::get\+St (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for st field. 
+
+This function returns the number of columns of the matrix \mbox{\Hypertarget{class_matrix_af2782a1ee05befb1d6185129b43f4227}\label{class_matrix_af2782a1ee05befb1d6185129b43f4227}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!getValue@{getValue}}
+\index{getValue@{getValue}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$int$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::get\+Value (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function takes the value of element and returns indexes of this element in matrix \begin{DoxyWarning}{Warning}
+The value must be present in the matrix 
+
+Don\textquotesingle{}t use for books and characters 
+\end{DoxyWarning}
+$<$ May be more than 1 element
+
+$<$ The first index
+
+$<$ The second index\mbox{\Hypertarget{class_matrix_a4bd7c99cd0c666e42f11a0463a98187d}\label{class_matrix_a4bd7c99cd0c666e42f11a0463a98187d}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!getValues@{getValues}}
+\index{getValues@{getValues}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getValues()}{getValues()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$vector$<$T$>$ $>$\& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::get\+Values (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for values field. 
+
+This function returns values of elements of the matrix \mbox{\Hypertarget{class_matrix_a08c54f1d3b68c3f8389a1ee757f24f19}\label{class_matrix_a08c54f1d3b68c3f8389a1ee757f24f19}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!multiplyMatrix@{multiplyMatrix}}
+\index{multiplyMatrix@{multiplyMatrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{multiplyMatrix()}{multiplyMatrix()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$T$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::multiply\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$ \&}]{matr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Multiplying operation for two matrixes. 
+
+This function takes the object of another matrix, multiply this and another matrixes and returns matrix-\/result $<$ For result
+
+$<$ An element
+
+$<$ Matrix-\/result\mbox{\Hypertarget{class_matrix_a92352d28aec4c8135a4b4bcac0b75fda}\label{class_matrix_a92352d28aec4c8135a4b4bcac0b75fda}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!multiplyMatrixByVector@{multiplyMatrixByVector}}
+\index{multiplyMatrixByVector@{multiplyMatrixByVector}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{multiplyMatrixByVector()}{multiplyMatrixByVector()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$T$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::multiply\+Matrix\+By\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ T $>$ \&}]{arr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Multiplying operation for matrix and vector. 
+
+This function takes the vector and multiply this matrix to vector and returns vector-\/result $<$ For result
+
+$<$ An element\mbox{\Hypertarget{class_matrix_a2ee4e103b81e0ab64d0e03eaf21744bd}\label{class_matrix_a2ee4e103b81e0ab64d0e03eaf21744bd}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T\& \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{rd,  }\item[{int}]{st }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+An operator which takes the indexes and returns the value of element with this index. 
+
+\mbox{\Hypertarget{class_matrix_ad13471b4c864eec5335ad1eb70cb85f4}\label{class_matrix_ad13471b4c864eec5335ad1eb70cb85f4}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!print@{print}}
+\index{print@{print}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function puts out into console all the values of the matrix \begin{DoxyWarning}{Warning}
+Don\textquotesingle{}t use for books and characters 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_matrix_a7020e3ce2d8fc707b82272667e367f9f}\label{class_matrix_a7020e3ce2d8fc707b82272667e367f9f}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!printBook@{printBook}}
+\index{printBook@{printBook}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{printBook()}{printBook()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::print\+Book (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function puts out into console all the values of the matrix \begin{DoxyWarning}{Warning}
+Use for books only 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_matrix_a7009c4e0e2eb5c3aa76ff0e884df44b8}\label{class_matrix_a7009c4e0e2eb5c3aa76ff0e884df44b8}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!printCharacter@{printCharacter}}
+\index{printCharacter@{printCharacter}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{printCharacter()}{printCharacter()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::print\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function puts out into console all the values of the matrix \begin{DoxyWarning}{Warning}
+Use for characters only 
+\end{DoxyWarning}
+\mbox{\Hypertarget{class_matrix_ae57667af6bec1901a92d1b5410958e99}\label{class_matrix_ae57667af6bec1901a92d1b5410958e99}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!printRarefy@{printRarefy}}
+\index{printRarefy@{printRarefy}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{printRarefy()}{printRarefy()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::print\+Rarefy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+This function puts out into console the rarefied form of the matrix \begin{DoxyWarning}{Warning}
+Only for int, double and bool types 
+\end{DoxyWarning}
+$<$ An object of class \mbox{\hyperlink{class_rarefied_matrix}{Rarefied\+Matrix}}
+
+$<$A method of class \mbox{\hyperlink{class_rarefied_matrix}{Rarefied\+Matrix}}\mbox{\Hypertarget{class_matrix_a292b27233d71f821e07752da991d78e4}\label{class_matrix_a292b27233d71f821e07752da991d78e4}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!transponeMatrix@{transponeMatrix}}
+\index{transponeMatrix@{transponeMatrix}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{transponeMatrix()}{transponeMatrix()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_matrix}{Matrix}}$<$T$>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::transpone\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transponing operation for matrix. 
+
+This function returns a transponed matrix $<$ For result
+
+$<$ Changing indexes
+
+$<$ Matrix-\/result
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_matrix_a9508c52bd0fc8c39a241e15dec4362b1}\label{class_matrix_a9508c52bd0fc8c39a241e15dec4362b1}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!rd@{rd}}
+\index{rd@{rd}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{rd}{rd}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::rd\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{class_matrix_a326eb93d497ed6666f9eec58e7013ba2}\label{class_matrix_a326eb93d497ed6666f9eec58e7013ba2}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!st@{st}}
+\index{st@{st}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{st}{st}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::st\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+indexes of matrix 
+
+\mbox{\Hypertarget{class_matrix_aa1ed6e110580811be90b85f00d2f3cd9}\label{class_matrix_aa1ed6e110580811be90b85f00d2f3cd9}} 
+\index{Matrix$<$ T $>$@{Matrix$<$ T $>$}!value@{value}}
+\index{value@{value}!Matrix$<$ T $>$@{Matrix$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+vector$<$vector$<$T$>$ $>$ \mbox{\hyperlink{class_matrix}{Matrix}}$<$ T $>$\+::value\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+values of elements 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+User/source/repos/2\+Year\+Laba1/2\+Year\+Laba1/\mbox{\hyperlink{_matrix_8h}{Matrix.\+h}}\end{DoxyCompactItemize}
