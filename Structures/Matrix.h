@@ -160,7 +160,7 @@ This function returns values of elements of the matrix
 			ret.push_back(vector<T>());
 			for (int j = 0; j < st; j++)
 			{
-				int sum = 0;///< An element
+				T sum = 0;///< An element
 				for (int k = 0; k < st; k++)
 				{
 					sum += this->value[i][k] * matr.value[k][j];
@@ -182,7 +182,7 @@ This function returns values of elements of the matrix
 		vector<T> ret;///< For result
 		for (int i = 0; i < rd; i++)
 		{
-			int sum = 0;///< An element
+			T sum = 0;///< An element
 			for (int j = 0; j < st; j++)
 			{
 				sum += this->value[i][j] * arr[j];
