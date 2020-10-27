@@ -1,14 +1,14 @@
-#include "BookSerie.h"
+#include "BookSeries.h"
 
 /**
-\brief Constructor of the class BookSerie
+\brief Constructor of the class BookSeries
 
 This function takes the information about books from the file
-and makes an object of the class BookSerie from the serial books
+and makes an object of the class BookSeries from the serial books
 
 */
 
-BookSerie::BookSerie()
+BookSeries::BookSeries()
 {
 	vector<Book> books;///< An array of all books from the file
 	for (int i = 1; i <= Book::sizeofBooksFile(); i++)
@@ -16,7 +16,7 @@ BookSerie::BookSerie()
 		Book knyha("Books.txt", i);///< Constructor for Book
 		books.push_back(knyha);
 	}
-	vector<vector<Book>> series;///< A matrix in which every line is for one serie of books
+	vector<vector<Book>> series;///< A matrix in which every line is for one series of books
 	int lich = 0;///< Counter
 	for (int i = 0; i < books.size(); i++)
 	{
@@ -35,7 +35,7 @@ BookSerie::BookSerie()
 				}
 			}
 
-			///An array for every serie
+			///An array for every series
 
 			if (!repeat)
 			{
@@ -77,15 +77,15 @@ BookSerie::BookSerie()
 
 /** 
 This function takes the index from console 
-and returns the bookserie with this index
+and returns the bookseries with this index
 */
-vector<Book>& BookSerie::getSerie(int index)
+vector<Book>& BookSeries::getSeries(int index)
 {
 	return series[index];
 }
 
 /// This function puts out into console all bookseries
-void BookSerie::print()
+void BookSeries::print()
 {
 	/// Putting out series of books into console
 	for (int i = 0; i < series.size(); i++)

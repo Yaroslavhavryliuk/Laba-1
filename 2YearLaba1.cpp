@@ -4,6 +4,7 @@
 #include "Matrix.h"
 #include "RarefiedList.h"
 #include "RarefiedMatrix.h"
+#include "BookSeries.h"
 
 
 ;
@@ -13,7 +14,7 @@ int main()
 	setlocale(LC_ALL, "ukr");
 	int a;// Variable for input
 	bool resumeM = true;// Variable for ending the program
-	cout << "What would you like to work with? Choose the number:" << endl << "1.List" << endl << "2.Matrix" << endl << "3.Book" << endl << "4.Character" << endl << "0.End the program" << endl;
+	cout << "What would you like to work with? Choose the number:" << endl << "1.List" << endl << "2.Matrix" << endl << "3.Book" << endl << "4.Character" << endl <<"5.BookSerie"<<endl<< "0.End the program" << endl;
 	while (resumeM)
 	{
 		cin >> a;
@@ -692,7 +693,16 @@ int main()
 			book.print();
 			cout << "-----------------------------------" << endl;
 			cout << "Series of books:" << endl;
-			book.printSeries();
+			BookSeries books;// bookserie class object
+			books.print();
+			cout << "-----------------------------------" << endl;
+			cout << "Enter the index for getting a books serie. Not more than number of series!" << endl;
+			int number;// index for books serie
+			cin >> number;
+			for (int i = 0; i < books.getSeries(number-1).size(); i++)
+			{
+				cout << books.getSeries(number-1)[i].getName() << "\t\t";
+			}
 		}
 		if (a == 4)//Work with class Character
 		{
@@ -705,6 +715,20 @@ int main()
 			Character character("Characters.txt", index);
 			cout << "All information about this character: " << endl;
 			character.print();
+		}
+		if (a == 5)// Work with series of books
+		{
+			// Show all the abilities of class BookSerie
+			cout << "All Series of books:" << endl;
+			BookSeries series;
+			series.print();
+			cout << "Enter the index for getting a books serie. Not more than number of series!" << endl;
+			int number;// index for books serie
+			cin >> number;
+			for (int i = 0; i < series.getSeries(number - 1).size(); i++)
+			{
+				cout << series.getSeries(number - 1)[i].getName() << "\t\t";
+			}
 		}
 	}
 

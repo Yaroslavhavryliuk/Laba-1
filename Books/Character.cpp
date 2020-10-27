@@ -1,5 +1,7 @@
 #include "Character.h"
 
+
+
 /**
 \brief Constructor of the class Character
 
@@ -54,10 +56,22 @@ Character::Character(string filename, int id)
 		finc >> this->booksNumber;
 		finc >> ch;
 		string str;
+		vector<Book> allbooks;
+		for (int i = 1; i <= Book::sizeofBooksFile(); i++)
+		{
+			Book b("Books.txt", i);
+			allbooks.push_back(b);
+		}
 		for (int i = 0; i < this->booksNumber; i++)
 		{
 			getline(finc, str);
-			booknames.push_back(str);
+			for (int i = 0; i < allbooks.size(); i++)
+			{
+				if (allbooks[i].getName() == str)
+				{
+					bookpart.push_back(allbooks[i]);
+				}
+			}
 			getline(finc, str);
 			status.push_back(str);
 		}
@@ -97,11 +111,11 @@ int Character::getBooksNumber()
 /**
 \brief Getter for books' names
 
-This function returns the names of books in which character is used
+This function returns books in which character is used
 */
-vector<string>& Character::getBookNames()
+vector<Book>& Character::getBooksPart()
 {
-	return booknames;
+	return bookpart;
 }
 /**
 \brief Getter for status
@@ -126,7 +140,7 @@ void Character::print()
 	cout << this->booksNumber << endl;
 	for (int i = 0; i < this->booksNumber; i++)
 	{
-		cout << this->booknames[i] << "\t\t" << this->status[i] << endl;
+		cout << this->bookpart[i].getName() << "\t\t" << this->status[i] << endl;
 	}
 }
 /**

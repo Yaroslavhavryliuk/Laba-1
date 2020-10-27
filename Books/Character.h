@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include "Book.h"
 using namespace std;
 
 /**
@@ -24,7 +25,7 @@ public:
 	/// Getter for BooksNumber field
 	int getBooksNumber();
 	/// Getter for BookNames field
-	vector<string>& getBookNames();
+	vector<Book>& getBooksPart();
 	/// Getter for status field
 	vector<string>& getStatus();
 	/// print the whole information about the character
@@ -37,6 +38,6 @@ private:
 	int id;///< id of the character
 	string name;///< name of the character
 	int booksNumber;///< the number of books in which character is used
-	vector<string> booknames;///<  names of books in which character is used
+	vector<Book> bookpart;///< books in which character is used
 	vector<string> status;/// status of character in every book
 };

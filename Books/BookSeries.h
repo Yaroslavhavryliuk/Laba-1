@@ -10,17 +10,17 @@ using namespace std;
 \brief A class which describes series of books
 
 This class has private field: series
-	vector<Book>& BookSerie();
-And public methods: constructor BookSerie(), getSerie(int index), print()
+	vector<Book>& BookSeries();
+And public methods: constructor BookSeries(), getSeries(int index), print()
 
 */
-class BookSerie
+class BookSeries
 {
 public:
-	/// Constructor of the class BookSerie
-	BookSerie();
-	/// A function for getting a serie by its index
-	vector<Book>& getSerie(int index);
+	/// Constructor of the class BookSeries
+	BookSeries();
+	/// A function for getting a series by its index
+	vector<Book>& getSeries(int index);
 	/// Print all the series of books
 	void print();
 private:
